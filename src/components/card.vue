@@ -8,7 +8,7 @@ const props = defineProps(['data'])
       <div class=""  v-for="quiz in data" :key="quiz.id">
           <img :src="quiz.img" alt="">
             <div class="">
-                <h2>{{ quiz.name }}</h2>
+                <h2 class="text-1xl sm:text-2xl font-bold">{{ quiz.name }}</h2>
                 <small>{{ quiz.questions.length }} questions</small>
             </div>
       </div>
