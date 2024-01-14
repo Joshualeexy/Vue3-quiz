@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import home from '../views/Home.vue';
-import doc from '../views/doc.vue';
 import quiz from '../views/quiz.vue';
 import error404 from '../views/404.vue';
 const route = createRouter({

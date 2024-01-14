@@ -2,7 +2,7 @@
 import { ref, watch } from 'vue'
 import datas from '../data/data.json'
 import card from '../components/card.vue'
-import { RouterLink,useRouter } from "vue-router"
+import { RouterLink } from "vue-router"
 
 
 const searchvalue = ref('')
