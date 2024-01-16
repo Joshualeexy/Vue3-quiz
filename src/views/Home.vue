@@ -16,6 +16,7 @@ watch(searchvalue, function () {
 
 
 <template>
+    
     <header class="p-10 flex gap-10 justify-between">
         <h1 class="text-2xl font-bold">Quizes</h1>
         <label for="searchbox">

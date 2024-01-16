@@ -1,17 +1,18 @@
 <script setup>
+import { ref, defineProps } from "vue"
 
+const props = defineProps(["questionStatus","barPercent"])
 
 </script>
 <template>
-<p>
-
-    <!-- {{ questions }} -->
-</p> 
     <div class="mb-10">
         <form action="">
-            <label for="" class="py-4  text-1xl">Question 0/3</label>
+            <label for="" class="py-4  text-1xl">Question {{ questionStatus }}</label>
             <br>
-            <input type="text" class="border-4 border-yellow-400 px-1 py-1 outline-none">
+          <div  class=" w-3/12 border-4 border-yellow-400">
+            <div class=" h-10 bg-yellow-300" :style="{width: `${barPercent}%` }"></div>
+
+          </div>
         </form>
     </div>
 </template>
